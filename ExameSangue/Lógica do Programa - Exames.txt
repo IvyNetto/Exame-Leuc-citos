@@ -1,0 +1,22 @@
+Raciocínio Lógico do Programa:
+
+1- Localizar leucócitos ( diferenciar hemácias de leucócitos )
+PARAMETRO: COR
+
+2- Diferenciar Agranulados e Granulados
+PARAMETROS: TEXTURA E FORMATO
+
+3- Porcentagem de preenchimento
+
+--------------------------------
+
+Leucócitos: 
+
+A- Granulados: 
+*Basófilos (alergia) - total preenchido 
+*Neutrófilo (Bactérias e fungos) - parcialmente preenchido ou menos 
+
+
+B-Agranulados:
+*Linfócitos (-) - total preenchido
+*Macrófago (-) - parcialmente preenchido ou menos 
