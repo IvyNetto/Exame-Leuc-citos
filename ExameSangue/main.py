@@ -1,3 +1,5 @@
+# https://www.kaggle.com/datasets/paultimothymooney/blood-cells dataset novo
+
 import cv2 as cv
 
 # Define a escala de mm por px
@@ -23,7 +25,7 @@ area_mm2 = area*(mm_por_px ** 2)
 print(f"\nPerímetro -> {perimetro_mm:.6f} mm")
 print(f"\nÁrea -> {area_mm2:.6f} mm2")
 
-print("Probabilidade de HIV ")
-print("Probabilidade de dengue")
+# print("Probabilidade de HIV ")
+# print("Probabilidade de dengue")
 cv.imshow(f"Imagem Contornada P{perimetro_mm:.6f}, A{area_mm2:.6f}", img)
 cv.waitKey()
