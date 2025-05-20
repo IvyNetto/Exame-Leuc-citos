@@ -76,7 +76,7 @@ def detectar_leucocitos_com_granularidade(imagem_path):
     magnitude = np.uint8(cv2.normalize(magnitude, None, 0, 255, cv2.NORM_MINMAX))
 
     # Definir um limiar para a granularidade
-    limiar_granularidade = 40  # Ajuste esse valor conforme necessário
+    limiar_granularidade = 40  # Ajustar esse valor conforme necessário
 
     # Detectar contornos dos leucócitos na imagem
     imagem_hsv = cv2.cvtColor(imagem, cv2.COLOR_BGR2HSV)
@@ -116,10 +116,9 @@ def detectar_leucocitos_com_granularidade(imagem_path):
 a=1
 i=0
 while a!=0 or i<410:
+    a=int(input("Continuar? 0 (Não) 1 ou Enter (Sim) Padrão => Sim\n>>") or "1")
     if a == 0 or i>410:
         break
-    a=int(input("Continuar? Padrão => Sim\n>>") or "1")
-    detectar_leucocitos_com_granularidade(f"dataset/treino/images/BloodImage_{i:05}.jpg")
+    detectar_leucocitos_com_granularidade(f"ExameSangue/dataset/treino/images/BloodImage_{i:05}.jpg")
     i+=1
 print("Encerrado")
-
